@@ -1,0 +1,10 @@
+{
+  "name": "Retard-Bot",
+  "version": "1.0.0",
+  "description": "My own Discord bot",
+  "main": "bot.js",
+  "author": "Chimo",
+  "dependencies": {
+    "discord.js": "^11.2.1"
+  }
+}
