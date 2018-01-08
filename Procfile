@@ -1,2 +1,2 @@
 # Procfile
-worker: node bot.js
+worker: npm install --save discord.js
