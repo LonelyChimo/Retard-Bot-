@@ -28,9 +28,9 @@ client.on("message", (message) => {
   if (message.content.startsWith(config.prefix + "help")) {
     message.channel.send("this is a list of commands http://collabedit.com/5qxb7");
   } else
-  if (message.content.startsWith(config.prefix + ''spaghet'')) {
-    message.chanel.send(''DO YOU JUST TOUCHA MY SPAGHET?'');
-  }
+  if (message.content.startsWith(config.prefix + "spaghet")) {
+    message.channel.send("DID YOU JUST TOUCHA MY SPAGHET?!?!?!");
+  } 
 });
 
 client.login(config.token);
