@@ -6,7 +6,12 @@ const config = require("./config.json");
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
-
+  setActivity(name, { url, type } = {}) {
+    if (!name) return this.setPresence({ activity: null });
+    return this.setPresence({
+      game: { playing with cock },
+    });
+  }
 client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 
