@@ -31,7 +31,5 @@ client.on("message", (message) => {
     message.channel.send("DID YOU JUST TOUCHA MY SPAGHET?!?!?!");
   } 
 });
-
 bot.user.setGame('Toucha My Spaghet');
-
 client.login(config.token);
