@@ -5,7 +5,7 @@ const config = require("./config.json");
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame('currently Voting for a Game')
+client.user.setGame('with Chatters dirty mum')
 });
 
 client.on("message", (message) => {
