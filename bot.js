@@ -1,11 +1,14 @@
 
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const config = require("./config.json");
+const config = require("./config.json")
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
+bot.on('ready', () => {
+  bot.user.setGame('Toucha My Spaghet')
+})
 client.on("message", (message) => {
   if (!message.content.startsWith(config.prefix) || message.author.bot) return;
 
