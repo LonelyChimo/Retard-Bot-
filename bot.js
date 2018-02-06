@@ -29,10 +29,7 @@ client.on("message", (message) => {
   } else
   if (message.content.startsWith(config.prefix + "spaghet")) {
     message.channel.send("DID YOU JUST TOUCHA MY SPAGHET?!?!?!");
-  } else
-  if (message.content.startsWith(config.prefix + "game")) {
-    bot.user.setGame('Toucha My Spaghet');
-  }
+  } 
 });
   
 client.login(config.token);
