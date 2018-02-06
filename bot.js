@@ -5,7 +5,7 @@ const config = require("./config.json")
 
 bot.on('ready', () => {
   bot.user.setGame('Toucha My Spaghet')
-})
+});
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
