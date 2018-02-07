@@ -28,7 +28,10 @@ client.on("message", (message) => {
   } else
   if (message.content.startsWith(config.prefix + "help")) {
     message.channel.send("this is a list of commands http://collabedit.com/5qxb7");
-  } 
+  } else
+  if (message.content.startsWith(config.prefix + "gspaghet")) {
+    client.user.setGame('With Chimos Spaghet')
+  }
 });
 
 client.login(config.token);
