@@ -39,7 +39,7 @@ client.on('message', function(user, userID, channelID, message, rawEvent) {
           to: 384725328909828108,
           message: "@Green Seagull#9036 u a fat fuck" // message to send
         });
-      }, 10000); // time between each interval in milliseconds
+      }, 8,64e+7); // time between each interval in milliseconds
   }
 });
 
