@@ -2,6 +2,7 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
+const DiscordClient = require('discord.io');
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
@@ -30,6 +31,15 @@ client.on("message", (message) => {
   } else
   if (message.content.startsWith(config.prefix + "gspaghet")) {
     client.user.setGame('With Chimos Spaghet')
+  } else
+client.on('message', function(user, userID, channelID, message, rawEvent) {
+    if (message === "!fat") { // command to trigger
+      var interval = setInterval (function (){
+        bot.sendMessage({
+          to: 384725328909828108,
+          message: "@Green Seagull#9036 u a fat fuck" // message to send
+        });
+      }, 10000); // time between each interval in milliseconds
   }
 });
 
