@@ -31,6 +31,9 @@ client.on("message", (message) => {
   } else
   if (message.content.startsWith(config.prefix + "gspaghet")) {
     client.user.setGame('With Chimos Spaghet')
+  } else
+  if (message.content.startsWith("U mom gay")) {
+    client.user.setGame('No u')
   }
 });
 
